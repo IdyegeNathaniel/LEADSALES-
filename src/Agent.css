@@ -1,0 +1,56 @@
+.agent {
+  margin: 80px 0;
+}
+.agent__details p {
+  color: #fff !important;
+}
+.agent__details h3 {
+  font-weight: 200;
+}
+.agent__details {
+  line-height: 1.5;
+  padding: 10px;
+}
+.agent__col img {
+  width: 100%;
+}
+.agent .col__3 {
+  flex-basis: 33.33%;
+  padding: 10px;
+}
+.agent__col {
+  background-color: tomato;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.agent p {
+  color: grey;
+  font-size: 15px;
+}
+.agent h1 {
+  font-weight: 400;
+  color: tomato;
+}
+.agent__col .social {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  transform: translateY(101%);
+  transition: 0.5s all ease;
+  background: #000;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+.col__3:hover .agent__col .social {
+  transform: translateY(0);
+}
+.agent__col .social li {
+  list-style: none;
+  display: inline;
+}

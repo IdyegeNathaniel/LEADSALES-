@@ -1,0 +1,22 @@
+.system {
+  max-width: 1300;
+  margin: 80px 0;
+  background-color: tomato;
+  padding: 20px 25px;
+}
+.system__container h2 {
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+.system__container {
+  margin: auto;
+}
+span img {
+  padding-left: 5px;
+}
+.system hr {
+  border: none;
+  background: #000;
+  height: 2px;
+  margin: 20px 0;
+}

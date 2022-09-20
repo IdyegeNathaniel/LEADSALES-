@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxanium", cursive;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1300px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+}
+.small__container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.col__2 {
+  flex-basis: 50%;
+  min-width: 300px;
+  padding: 20px;
+}
+.col__3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  padding: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  transition: 0.4s ease-in;
+}
+.btn:active {
+  transform: scale(0.5);
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.text__align__center {
+  text-align: center;
+}
+.d__flex {
+  display: flex;
+}
+.justify__content__center {
+  justify-content: center;
+}
+.justify__content__space__between {
+  justify-content: space-between;
+}
+.justify__content__space__around {
+  justify-content: space-around;
+}
+.align__items__center {
+  align-items: center;
+}
+.pointer {
+  cursor: pointer;
+}
+.white {
+  color: #fff;
+}
+.gray {
+  color: gray;
+}
+.grey {
+  color: grey;
+}
+.tomato {
+  color: tomato;
+}
+.bblack {
+  background: #000;
+}
+.normal {
+  font-weight: normal;
+}
+.plr__5 {
+  padding: 5px;
+}
+.title {
+  text-align: center;
+  color: tomato;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  .col__hover .col__3 {
+    width: 100%;
+  }
+}

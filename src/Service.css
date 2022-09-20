@@ -1,0 +1,26 @@
+.service .container {
+  margin: 50px 0;
+}
+.service {
+  padding: 100px 0;
+  margin: 80px 0;
+  background: #f0f0f0;
+}
+.serv__icon::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: tomato;
+  opacity: 0.2;
+  z-index: 2;
+  top: 10px;
+  left: -20px;
+}
+.serv__icon img {
+  margin-right: 22px;
+}
+.serv__icon {
+  position: relative;
+}
