@@ -73,6 +73,7 @@ ul.sidebar {
   flex-direction: column;
   z-index: 999;
   justify-content: center;
+  display: none;
 }
 li.sideNavbar {
   padding: 25px 30px;
@@ -93,7 +94,7 @@ li.sideNavbar {
   .content h1 {
     font-size: 30px;
   }
-  .toggle__menu {
+  .toggle__menu, ul.sidebar  {
     display: flex;
   }
 }
