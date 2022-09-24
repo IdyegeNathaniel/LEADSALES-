@@ -25,10 +25,19 @@
 /*RESPONSIVE*/
 
 @media screen and (max-width: 800px) {
-  .row {
-    flex-direction: column;
+  .listing .small__container .row {
+    flex-wrap: wrap;
   }
-  .col__hover .col__3 {
-    width: 100%;
+  .listing .small__container .col__3 img {
+    width: 250px;
+  }
+  .listing .col__3 {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .listing .col__3 .col__hover {
+    flex-basis: 100%;
   }
 }
