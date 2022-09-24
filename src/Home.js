@@ -1,13 +1,16 @@
 import "./Home.css";
 import Logo from "./Images/Logo.png";
+import { useState } from "react";
 
 function Home() {
+  const [show, setShow] = useState(true);
+
   return (
     <div className="home">
       <div className="container">
         <div className="nav__bar">
           <div className="logo">
-            <img src={Logo} width="180px" />
+            <img src={Logo} />
           </div>
           <nav>
             <ul>
@@ -15,19 +18,61 @@ function Home() {
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">Service</a>
+                <a href="#agent">Agents</a>
               </li>
               <li>
-                <a href="#">Agents</a>
+                <a href="#service">Service</a>
+              </li>
+
+              <li>
+                <a href="#news">News</a>
               </li>
               <li>
-                <a href="#">News</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </nav>
+
+          {/* SIDE MENU */}
+          <div className="toggle__menu pointer">
+            <svg
+              onClick={() => {
+                setShow(!show);
+              }}
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="white"
+              class="bi bi-justify"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+          {show ? (
+            <div className="sideNavbar">
+              <ul className="sidebar">
+                <li className="sideNavbar">
+                  <a href="#">Home</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#agent">Agents</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#service">Services</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#news">News</a>
+                </li>
+                <li className="sideNavbar">
+                  <a href="#contact">Contact US</a>
+                </li>
+              </ul>
+            </div>
+          ) : null}
         </div>
         <div className="content text__align__center white">
           <h3>We Are Your Realtor!</h3>
