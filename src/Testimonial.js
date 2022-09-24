@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Testimonial.css";
 import Customer1 from "./Images/customer1.webp";
 import Customer2 from "./Images/customer2.webp";
 import Customer3 from "./Images/customer3.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Testimonial() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="testimonial">
       <div className="title">
@@ -12,7 +17,7 @@ function Testimonial() {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col__2">
+          <div className="col__2" data-aos="fade-up" data-aos-delay="100">
             <div className="profile d__flex align__items__center">
               <img src={Customer1} alt="" />
               <div className="customer__name">
@@ -38,7 +43,7 @@ function Testimonial() {
             </div>
           </div>
 
-          <div className="col__2">
+          <div className="col__2" data-aos="fade-up" data-aos-delay="100">
             <div className="profile d__flex align__items__center">
               <img src={Customer2} alt="" />
               <div className="customer__name">
@@ -64,7 +69,7 @@ function Testimonial() {
             </div>
           </div>
 
-          <div className="col__2">
+          <div className="col__2" data-aos="fade-up" data-aos-delay="500">
             <div className="profile d__flex align__items__center">
               <img src={Customer3} alt="" />
               <div className="customer__name">
@@ -90,7 +95,7 @@ function Testimonial() {
             </div>
           </div>
 
-          <div className="col__2">
+          <div className="col__2" data-aos="fade-up" data-aos-delay="500">
             <div className="profile d__flex align__items__center">
               <img src={Customer1} alt="" />
               <div className="customer__name">
