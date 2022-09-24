@@ -100,7 +100,7 @@ function Footer() {
         <div className="copyright">
           <hr />
           <h4>
-            Copyright © 2022 All Rights Reserved | DEVELOPED WITH 🦾 BY PROGRAMMER WHO{" "}
+            Copyright © 2022 All Rights Reserved | DEVELOPED WITH 🦾 BY IDYEGE{" "}
           </h4>
         </div>
       </div>
