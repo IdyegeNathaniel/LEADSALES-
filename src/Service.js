@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./Service.css";
 import Dollar from "./Images/dollar.png";
 import Find from "./Images/find-house.png";
@@ -5,16 +6,26 @@ import Home from "./Images/house.png";
 import Phone from "./Images/phone.png";
 import Locator from "./Images/location.png";
 import Building from "./Images/building.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Service() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="service">
+    <div className="service" id="service">
       <div className="title">
         <h1>SERVICES</h1>
       </div>
       <div className="container">
         <div className="row">
-          <div className="col__3 d__flex">
+          <div
+            className="col__3 d__flex"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <span className="serv__icon">
               <img src={Find} alt="" width="40px" />
             </span>
@@ -32,7 +43,11 @@ function Service() {
             </div>
           </div>
 
-          <div className="col__3 d__flex">
+          <div
+            className="col__3 d__flex"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <span className="serv__icon">
               <img src={Dollar} alt="" width="40px" />
             </span>
@@ -50,7 +65,11 @@ function Service() {
             </div>
           </div>
 
-          <div className="col__3 d__flex">
+          <div
+            className="col__3 d__flex"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <span className="serv__icon">
               <img src={Home} alt="" width="40px" />
             </span>
@@ -68,7 +87,11 @@ function Service() {
             </div>
           </div>
 
-          <div className="col__3 d__flex">
+          <div
+            className="col__3 d__flex"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <span className="serv__icon">
               <img src={Building} alt="" width="40px" />
             </span>
@@ -86,7 +109,11 @@ function Service() {
             </div>
           </div>
 
-          <div className="col__3 d__flex">
+          <div
+            className="col__3 d__flex"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <span className="serv__icon">
               <img src={Locator} alt="" width="40px" />
             </span>
@@ -104,7 +131,11 @@ function Service() {
             </div>
           </div>
 
-          <div className="col__3 d__flex">
+          <div
+            className="col__3 d__flex"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <span className="serv__icon">
               <img src={Phone} alt="" width="40px" />
             </span>
