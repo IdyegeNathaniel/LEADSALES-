@@ -43,7 +43,7 @@ function Listing() {
                 </div>
             </div>
 
-            <div className="row">
+            
                 <div className="col__3 pointer">
                     <div className="col__hover">
                         <img src={Property3} alt="" />
@@ -76,7 +76,7 @@ function Listing() {
                         </div>
                     </div>   
                 </div>
-            </div>
+           
         </div>
     </div>
   )
