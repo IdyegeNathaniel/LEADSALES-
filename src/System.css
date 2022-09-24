@@ -20,3 +20,16 @@ span img {
   height: 2px;
   margin: 20px 0;
 }
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .system .system__container .row {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .system .row {
+    flex-direction: column;
+  }
+}
