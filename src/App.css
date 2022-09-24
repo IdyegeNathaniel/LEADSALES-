@@ -84,6 +84,15 @@ ul {
 .bblack {
   background: #000;
 }
+.blue {
+  color: steelblue;
+}
+.bblue {
+  color: rgb(41, 79, 184);
+}
+.pink {
+  color: pink;
+}
 .normal {
   font-weight: normal;
 }
@@ -100,7 +109,7 @@ ul {
   .row {
     flex-direction: column;
   }
-  .col__hover .col__3 {
+  .col__3 {
     width: 100%;
   }
 }
