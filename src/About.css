@@ -13,3 +13,9 @@
   background-color: tomato;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 320px) {
+  .about .col__2 img {
+    width: 200px;
+  }
+}
