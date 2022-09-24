@@ -1,4 +1,5 @@
 .agent {
+  padding: 100px 0;
   margin: 80px 0;
 }
 .agent__details p {
@@ -53,4 +54,20 @@
 .agent__col .social li {
   list-style: none;
   display: inline;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .agent .small__container .row {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .agent .small__container .row {
+    flex-wrap: wrap;
+  }
+  .agent .col__3 {
+    flex-basis: 100%;
+  }
 }
