@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "./About";
 import Agent from "./Agent";
 import "./App.css";
@@ -14,16 +15,28 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Listing />
-      <Agent />
-      <System />
-      <About />
-      <Service />
-      <Testimonial />
-      <News />
-      <Contact />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Listing />
+                <Agent />
+                <System />
+                <About />
+                <Service />
+                <Testimonial />
+                <News />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/propertydetails/:id" element />
+        </Routes>
+      </Router>
     </div>
   );
 }
